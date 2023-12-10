@@ -1,4 +1,4 @@
-/*
+/* SELECT
 SELECT population FROM world
   WHERE name = 'Germany'
 
@@ -52,6 +52,17 @@ SELECT capital, name FROM world WHERE capital LIKE concat('%',name,'%')
 SELECT capital, name FROM world WHERE capital LIKE concat(name,'_%')
 
 SELECT name, REPLACE(capital, name, '') FROM world WHERE capital LIKE concat('%', name, '%') AND capital > name;
+
+SELECT name, gdp/population FROM world WHERE population >200000000
+
+
+*/
+
+/* Join
+SELECT matchid, player FROM goal 
+  WHERE teamid LIKE 'GER'
+
+
 
 
 */
