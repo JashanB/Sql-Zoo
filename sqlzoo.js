@@ -62,6 +62,11 @@ SELECT name, gdp/population FROM world WHERE population >200000000
 SELECT matchid, player FROM goal 
   WHERE teamid LIKE 'GER'
 
+SELECT id,stadium,team1,team2
+  FROM game WHERE id = 1012
+
+  SELECT player,teamid, stadium, mdate
+  FROM goal JOIN game ON (goal.matchid=game.id) WHERE goal.teamid = 'GER'
 
 
 
